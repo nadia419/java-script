@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration js</title>
+</head>
+<body>
+    <!--javscript as an attribute to an event-->
+  <h1 onclick="document.write('Hello World')">Java script in page</h1> 
+  <h1>Apple math in java script</h1>
+  <p>the math</p>
+  <ul>
+    <li>we have to 50 basket</li>
+    <li>5 apple</li>
+  </ul>
+  
+  <!--this is the tag for java script-->
+  <script>
+    //here we declair basket and apple as a variables
+   var basket;
+   var apple;
+
+// here we decide values
+    basket=50;
+    apple=5;
+
+    function fullBusket(){
+         var total=basket/apple;
+         return total;
+
+    }
+//Here I use the javascript syntax (The executor of the js code is the browser)
+ document.write("overl all we have:" + fullBusket() + "apple");
+
+  </script>
+  <!--external java script-->
+  <!--<script src="first.js"></script>-->
+    
+</body>
+
+</html>
