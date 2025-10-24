@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perimeter-calculation</title>
+</head>
+<body>
+    <h1>The perimeter of the square you entered measures:</h1>
+    <script>
+        //declaring a variable and assigning its value
+        var side = Number(prompt("enter side number",""))
+
+        //The variable side returns a text (string), but using the
+        //numbero function we will get a number.
+         function perimeter(){
+            var perimeter_calculation = side * 4;
+
+            return perimeter_calculation;
+         }
+
+         document.write("the number is:" + perimeter () + "cm" );
+    </script>
+</body>
+</html>
