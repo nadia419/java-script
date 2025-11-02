@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perimeter-calculation</title>
+    <style>
+        tr, td ,th{
+            border: 1px solid black;
+        }
+        table{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>The perimeter of the square you entered measures:</h1>
+     <table>
+        <tr>
+        <th>the perimeter</th>
+        </tr>
+        <tr>
+            <td id="here"></td>
+        </tr>
+        <tr>
+            <td id="he"></td>
+        </tr>
+         <tr>
+            <td id="hee"></td>
+        </tr>
+    </table>
+    <script>
+        //declaring a variable and assigning its value
+        var side = 5 ;
+        //The variable side returns a text (string), but using the
+        //numbero function we will get a number.
+         function perimeter(){
+            var perimeter_calculation = side * 4;
+
+            return perimeter_calculation;
+         }
+
+         document.write("the number is:" + perimeter () + "cm" );
+
+         //to add the result inside a popup this is the code for it and inside a lert we cant not use html
+
+         alert("the number is:" + perimeter () + "cm" );
+         // console tag is used for print in colsole page and it us used to understand if console is working or not
+         console.log ("the number is:" + perimeter () + "cm" )
+        // print is used for to popup of page about print
+         print("the number is:" + perimeter () + "cm")
+
+        // VERY IMPORTANT RULES ID ALWAYS HAS TO BE SCRIPT TAG SO ITS BETTER IS WE WRITE SCRIPT BEFORE THE COLSING OF BODY TAG
+        // ANOTHER RULES ID ALWAYS HAS TO BE DIFFRENT FOR EACH ALEMENT
+        //  attanttion that id have to be written before the script
+
+         // stamp on a specific tag using id here our id is "here" it has two ways 
+         //innerHTML= the topic we want to stamp and it also supports html
+         //innerText= the topic we want to stam but here. html do not supports
+         document.getElementById("here").innerHTML =  perimeter () + "<strong> cm </strong>" ;
+          // storter from of this code is
+          hee.innerHTML =  perimeter () + "<strong> cm </strong>" ;
+          document.getElementById("he").innerText =  perimeter () + "<strong> cm </strong>";
+        
+    </script>
+    
+    <p>hey i am nadia</p>
+   
+</body>
+</html>
