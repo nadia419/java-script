@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Variables and prefixes</h1>
+    <ul>
+
+        <!--using script if we write sothing inside the li it will not print it 
+        will print only the value of id that we have written inside the script
+        to add writing we have write inside the innerhtml value-->
+        <li id="a">prefixe var</li>
+        <li id="b">prefixe let</li>
+        <li id="c">prefixe conts</li>
+        <li id="d"></li>
+        <li id="e"></li>
+        <li id="f"></li>
+        <li id="g"></li>
+        <li id="h"></li>
+        <li id="i"></li>
+        <li id="l"></li>
+        <li id="m"></li>
+        <li id="n"></li>
+        <li id="o"></li>
+        
+    </ul>
+    <script>
+        //variables by prefix
+        //declaring a variable
+        var x;
+
+       //assigning a value
+       x=10;
+       //declaration and assignment in the same string
+       var y=5; //variables with the var profile can change their assigned value
+       var y=10;// variable y value has changed
+       var y=15;
+    a.innerHTML=y+"prefixe var";
+      //there is another way of decliering variables is let
+       let z=5;
+       // in let the variables cant not be changed one they decided
+       // if i put like this i can make it work var zy = z+2;
+
+       b.innerHTML=z +"prefixe let";
+    // then we have conts also conts we can not change after we decide the value
+    // but they can be used in a function
+       const w=20;
+      
+
+       c.innerHTML=w+z +"prefixe conts";
+
+       //variables are linked and associated with a value
+       //and I can distinguish their type based on the syntax (as written) of the value
+        var num  = 500; 
+       //be careful, not all types can interact with each other and they must always be converted
+      d.innerHTML= num+ "" + typeof(num)//it is called (integer)
+
+        var decimalenum ="20.2"; // it is called (float) decimal number separated by comma like this"."
+        e.innerHTML= decimalenum + " " + typeof(decimalenum )
+
+        var texto = "Hello";
+         f.innerHTML= texto+ " " + typeof(texto) //(string) variable composed of characters
+         
+         var nulla= 5;
+         var nulla = null;//null cancels the assignment of a value (it is considered an object)
+        g.innerHTML= nulla +" " +typeof(nulla);
+
+
+        var nondefinito;  //variable declared but not assigned any value
+        h.innerHTML = nondefinito +" " +typeof(nondefinito);
+        
+        var elenco = [ 20,30,40,50] //(array set of a series of elements with the same characteristics
+         i.innerHTML =  elenco  +" " +typeof(elenco ); //indicating the index of the object [0] 
+
+       var oggetto = {
+                      colore: "red<br>",
+                      modello: "ferrari<br>",
+                      quantita: 2
+       }
+
+       //object in the strict sense, unlike lists, can contain multiple types of value
+       //be careful when printing an object I must indicate the object's element after object
+       l.innerHTML= oggetto.colore +  oggetto.modello +  oggetto.quantita + " " +typeof(oggetto)
+         
+       var verofalso = true;//true and false are Boolean values ​​that satisfy a certain condition
+       m.innerHTML = verofalso  +" " +typeof(verofalso );
+
+       var funzione = function(a,b) { return a * b}// function provided that it indicates the arguments
+           
+           //The arguments are the calculation elements for the function
+
+     n.innerHTML = funzione  +" " +typeof(funzione );
+
+
+     var esponenziale = 1e5;
+    o.innerHTML = esponenziale  +" " +typeof(esponenziale );
+
+    </script>
+</body>
+</html>
