@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>the function</h1>
+
+<script>
+//use of function
+//Function structure: function + function name. 
+// The parentheses indicate whether the function accepts arguments or not.
+//  In our case, we have two arguments.(a and b) + { in the curly bracket 
+// indicates what the function should do
+ function sum(a,b){
+
+    /* If the function needs to return a value, use return followed by 
+    the operations to be performed with the arguments. */
+        return a + b;
+    }
+function multiply(a,b) {
+    return a*b;
+}
+
+function divide(a,b) {
+    return a/b;
+}
+
+function hello(){
+    
+    document.write("hello");
+}
+
+
+
+var first = Number(prompt("insert the first number"," "));
+var second = Number(prompt("insert the second number"," "));
+
+document.write(sum(first,second));
+document.write(sum("nadia","tanvir"," "));
+
+
+// function without a argument
+
+function hom () {
+    var a = "my home";
+    var b = " hello";
+    var c = a + b ;
+    return c;
+}
+//Calling the function without specific arguments () means we are not
+// obligated to insert a value into the function */
+document.write(hom(" "));
+
+
+</script>
+</body>
+</html>
