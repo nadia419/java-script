@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        font-family: sans-serif;
+    }
+    p{
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>calculation of the perimeter of Square </h1>
+    <HR>
+    <p id="uno"></p>
+     <p id="due"></p>
+
+    <p id="type"></p>
+
+    <script>
+//we will insert the value of the sides
+   var lato;
+// so here value of the square side will be submited my client if we 
+//want to make string a number we can just add with prompt a number
+   lato= Number(prompt("put the value of square",""));
+
+
+//calculation variables
+var perimeter = lato * 4;
+ var area= lato * lato;
+
+
+// stamp of the perimeter so if we add .tofixed(0) there will be no .number exp(1.1,222.2) like this 
+// but if we put tofixed(1) or tofixed(2) it will leave number after. two number exp(12.2)or (12.22) like this
+document.getElementById("uno").innerHTML = "perimeter of square:" + perimeter.toFixed(2);
+
+document.getElementById("due").innerHTML= "area of the squre:"  + area.toFixed(1);
+// to stamp the type of variables 
+document.getElementById("type"). innerHTML= typeof(lato)+ " " + typeof(perimeter);
+    </script>
+    
+   
+   
+</body>
+</html>
